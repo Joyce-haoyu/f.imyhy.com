@@ -2,7 +2,6 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <!-- 手机自适应核心标签 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>欢迎新成员</title>
     <style>
@@ -13,74 +12,52 @@
             font-family: system-ui, -apple-system, sans-serif;
         }
         body {
-            background-color: #f7f8fa;
+            background: #f5f6f8;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 30px 20px;
+            padding: 20px;
         }
-        .wrap {
+        .card {
             width: 100%;
-            max-width: 360px;
-            background: #fff;
-            border-radius: 16px;
-            padding: 40px 24px;
+            max-width: 340px;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 36px 22px;
             text-align: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
         }
-        h1 {
+        h2 {
             font-size: 24px;
-            color: #222;
-            margin-bottom: 12px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
             font-weight: 600;
         }
-        .desc {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 32px;
-        }
-        /* 二维码图片容器 */
-        .qrcode-box {
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 24px;
-            border: 1px dashed #ccc;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 13px;
-        }
-        .qrcode-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-            display: none;
-        }
-        .tip {
+        .subtitle {
             font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .qrcode {
+            width: 210px;
+            height: 210px;
+            border-radius: 12px;
+            margin: 0 auto 24px;
+        }
+        .tips {
+            font-size: 13px;
             color: #888;
         }
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <h1>长按下方二维码加入</h1>
-        <p class="desc">同心同行，一起交流成长</p>
-
-        <!-- 二维码区域，替换src为你的图床图片链接即可 -->
-        <div class="qrcode-box">
-            <!-- 把引号内替换成图床链接，替换后虚线框文字自动隐藏 -->
-            <img src="https://free.boltp.com/2026/09/07/6a9e5df0d666b.webp alt="https://free.boltp.com/2026/09/07/6a9e5df0d666b.webp">
-            二维码图床链接放此处
-        </div>
-
-        <p class="tip">长按识别二维码进群，期待你的交流</p>
+    <div class="card">
+        <h2>欢迎新成员加入</h2>
+        <p class="subtitle">相伴同行，多多交流</p>
+        <!-- 已填入你提供的图床二维码链接 -->
+        <img class="qrcode" src="https://free.boltp.com/2026/09/07/6a9e5df0d666b.webp" alt="社群二维码">
+        <p class="tips">扫码加入社群</p>
     </div>
 </body>
 </html>
